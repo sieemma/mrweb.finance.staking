@@ -27,7 +27,7 @@ export default function Stake() {
         (async function getToken() {
           window.tronWeb
             .contract()
-            .at("TVocZFCRZ6tg8MqKCKXzZ9H2qSg29T75tK")
+            .at("TDuEkGLA1e2FxCG27tvtLDJ5VNKzddCtHs")
             .then((data) => {
               data
                 .balanceOf(window.tronWeb.defaultAddress.base58)
