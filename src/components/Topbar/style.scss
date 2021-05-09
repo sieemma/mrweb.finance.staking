@@ -1,0 +1,16 @@
+.topbarContainer{
+    background: #516192;
+    padding: 15px 10vw;
+    img{
+        width: 11vw;
+
+        @media (max-width: 769px){
+            width: 20vw;
+        }
+        @media (max-width: 597px){
+            width: 30vw;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

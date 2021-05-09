@@ -1,0 +1,152 @@
+.homeContainer {
+  color: #bfc8e2;
+
+  // landing
+  .landing {
+    padding: 50px;
+
+    img,
+    h1 {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    img {
+      max-width: 30vw;
+      margin-bottom: 20px;
+
+      @media (max-width: 769px) {
+        max-width: 60vw;
+      }
+    }
+
+    p {
+      text-align: center;
+      max-width: 50vw;
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+      line-height: 1.5;
+
+      @media (max-width: 769px) {
+        max-width: 70vw;
+      }
+    }
+
+    a {
+      text-decoration: none;
+
+      .MuiButton-root {
+        display: block;
+        margin: 0 auto;
+        background: #34c28e;
+        color: #fff;
+        text-transform: initial;
+        padding: 10px 40px;
+        margin: 20px auto;
+      }
+    }
+  }
+
+  // staking help container
+  .stakingHelp {
+    padding: 0 8vw;
+
+    hr {
+      border: none;
+      border-top: 1px solid grey;
+    }
+
+    h1 {
+      margin: 40px 0;
+      text-align: center;
+    }
+    .stakingHelpContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 577px){
+          flex-direction: column;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          width: 8vw;
+          height: 8vw;
+          object-fit: cover;
+          border-radius: 15px;
+          margin-bottom: 20px;
+
+          @media (max-width: 1201px){
+              width: 11vw;
+              height: 11vw;
+          }
+          
+          @media (max-width: 768px){
+              width: 14vw;
+              height: 14vw;
+          }
+
+          @media (max-width: 577px){
+            width: 22vw;
+            height: 22vw;
+        }
+        }
+
+        span {
+          font-weight: 600;
+        }
+      }
+
+      div:nth-child(2) {
+        margin: 0 60px;
+
+        @media (max-width: 1201px){
+            margin: 0 40px;
+        }
+
+        @media (max-width: 577px){
+            margin: 40px 0;
+        }
+      }
+    }
+  }
+
+  // iframe
+  .videoIframeContainer {
+    padding: 0 8vw;
+    display: block;
+    margin: 60px auto 50px auto;
+
+    hr {
+      border: none;
+      border-top: 1px solid grey;
+    }
+
+    iframe {
+      display: block;
+      margin: 50px auto;
+      width: 35vw;
+      aspect-ratio: 16/9;
+
+      @media (max-width: 1201px){
+        width: 40vw;
+    }
+
+    @media (max-width: 769px){
+        width: 55vw;
+    }
+
+    @media (max-width: 577px){
+        width: 80vw;
+    }
+    }
+  }
+}

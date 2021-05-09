@@ -1,0 +1,116 @@
+.connectWalletContainer {
+  margin: 50px 0;
+  .MuiButton-root {
+    color: #fff;
+    background: #34c28e;
+  }
+}
+
+.stakeContainer {
+  background: #232737;
+  padding: 25px 10vw;
+
+  @media (max-width: 456px) {
+    padding: 25px 8vw;
+  }
+
+  .addressBar {
+    display: flex;
+    justify-content: space-between;
+    background: #2b3043;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    color: #bfc8e2;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+
+      .amaAmount {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  // universal data container
+  .universalDataContainer {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @media (max-width: 769px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .totalRevenueContainer,
+    .totalReferralContainer,
+    .totalUsersContainer,
+    .stakingStartsContainer {
+      background: #2b3043;
+      width: 18.5vw;
+      padding: 25px 0;
+      line-height: 1.5;
+      border-radius: 5px;
+
+      @media (max-width: 769px) {
+        width: 80%;
+        margin-bottom: 30px;
+      }
+    }
+
+    .title {
+      color: #bfc8e2;
+      font-size: 23px;
+      font-weight: 600;
+    }
+
+    .content {
+      color: #fff;
+      font-size: 26px;
+      font-weight: 600;
+    }
+  }
+
+  // stakeform container
+  .stakeFormContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    justify-content: space-between;
+
+    @media (max-width: 993px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dividendContainer {
+      background: #2b3043;
+      width: 44%;
+      padding: 15px 30px;
+      color: #bfc8e2;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 5px;
+
+      @media (max-width: 1367px) {
+        width: 43%;
+      }
+
+      @media (max-width: 993px) {
+        width: 80%;
+      }
+
+      @media (max-width: 597px) {
+        width: 90%;
+      }
+
+      @media (max-width: 456px) {
+        width: 80%;
+      }
+    }
+  }
+}

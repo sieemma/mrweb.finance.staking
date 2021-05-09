@@ -1,0 +1,34 @@
+.dividendTokenContainer {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  justify-content: space-between;
+
+  @media (max-width: 456px){
+    flex-direction: column;
+  }
+
+  .token {
+    display: flex;
+    align-items: center;
+    .tokenIcon {
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .MuiButton-root {
+    background: #34c28e;
+    color: #fff;
+    text-transform: initial;
+    padding: 5px 35px;
+    margin-top: 10px;
+  }
+
+  .compoundAsset{
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,113 @@
+.stakeForm {
+  background: #2b3043;
+  width: 44%;
+  padding: 30px;
+  color: #bfc8e2;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+
+  @media (max-width: 1367px) {
+    width: 43%;
+  }
+
+  @media (max-width: 993px) {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 597px) {
+    width: 90%;
+  }
+
+  @media (max-width: 456px){
+    width: 82%;
+  }
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px){
+      flex-direction: column;
+    }
+
+    .apyModelContainer {
+      display: flex;
+      align-items: center;
+
+      .MuiSvgIcon-root {
+        color: #bfc8e2;
+        width: 0.6em;
+        margin-right: 5px;
+      }
+
+      @media (max-width: 597px) {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .inputContainer {
+    margin: 15px 0;
+
+    .input {
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+
+      label,
+      span {
+        background: #32384f;
+        padding: 8px 15px;
+        border-radius: 5px 0 0 5px;
+      }
+
+      span {
+        border-radius: 0 5px 5px 0;
+      }
+
+      @media (max-width: 597px) {
+        label {
+          display: none;
+        }
+      }
+
+      input {
+        background: transparent;
+        border: 0.5px solid #50576b;
+        padding: 8px 15px;
+        margin: 0;
+        color: #bfc8e2;
+        flex: 1;
+      }
+    }
+
+    .userBalance {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+
+      .MuiSvgIcon-root {
+        color: #bfc8e2;
+        width: 0.6em;
+        margin-right: 5px;
+      }
+    }
+
+    .MuiButton-root {
+      display: block;
+      margin: 0 auto;
+      background: #34c28e;
+      color: #fff;
+      text-transform: initial;
+      padding: 5px 35px;
+      margin-top: 30px;
+    }
+  }
+
+  .stakePeriodExist{
+    border-top: 1px solid grey;
+    margin-top: 20px;
+  }
+}

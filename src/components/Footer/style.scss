@@ -1,0 +1,18 @@
+.footerContainer{
+    background: #262A3D;
+    color: #A4AECE;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10vw;
+    flex-wrap: wrap;
+    font-size: 15px;
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+
+    @media (max-width: 456px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

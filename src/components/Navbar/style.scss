@@ -1,0 +1,40 @@
+.navbarContainer {
+  background: #292f3f;
+  padding: 15px 10vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 596px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    color: #a5afcd;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-right: 45px;
+
+    @media (max-width: 596px) {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  a:last-child {
+    margin-right: 0;
+
+    @media (max-width: 596px) {
+        margin: 0;
+      }
+  }
+
+  .MuiSvgIcon-root {
+    width: 0.8em;
+    margin-right: 5px;
+  }
+}

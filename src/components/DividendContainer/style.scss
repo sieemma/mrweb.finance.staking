@@ -1,0 +1,30 @@
+.dividend {
+  .muiappbar-colorprimary {
+    background: transparent;
+    color: #bfc8e2;
+  }
+
+  .MuiPaper-root {
+    background: transparent;
+  }
+
+  .MuiPaper-elevation4 {
+    box-shadow: none;
+  }
+
+  .MuiTab-root {
+    text-transform: initial;
+  }
+
+  .PrivateTabIndicator-colorSecondary-3 {
+    background: #556ee6;
+  }
+
+  .MuiTabs-scroller{
+      border-bottom: 1px solid grey;
+  }
+
+  .MuiBox-root{
+      padding: 12px!important;
+  }
+}
