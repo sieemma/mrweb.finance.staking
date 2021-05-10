@@ -33,7 +33,7 @@ export default function Stake() {
                 .balanceOf(window.tronWeb.defaultAddress.base58)
                 .call()
                 .then((data) =>
-                  setBalance(window.tronWeb.toDecimal(data) / 1000000)
+                  setBalance(window.tronWeb.toDecimal(data) / 1000)
                 );
 
               setTokenContract(data);
@@ -77,7 +77,7 @@ export default function Stake() {
               <div className="totalRevenueContainer">
                 <div className="title">Total Staked</div>
                 <div className="content">
-                  {universalData.totalStaked / 1000000}
+                  {universalData.totalStaked / 1000}
                 </div>
               </div>
 
