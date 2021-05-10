@@ -27,7 +27,7 @@ export default function StakeForm({ contract, tokenContract, address }) {
       .send()
       .then(() => {
         contract
-          .StakeTokens(apyModel, (parseFloat(amount) * 1000).toString())
+          .StakeTokens(apyModel, (parseFloat(amount) * 100).toString())
           .send()
           .then(() => {
             setTimeout(() => {
@@ -51,7 +51,7 @@ export default function StakeForm({ contract, tokenContract, address }) {
           setIsLocked(true);
 
         setStakedAmount(
-          window.tronWeb.toDecimal(data.initialInvestment / 1000)
+          window.tronWeb.toDecimal(data.initialInvestment / 100)
         );
 
         const timestamp = window.tronWeb.toDecimal(data.investmentPeriodEndsAt);
@@ -66,7 +66,7 @@ export default function StakeForm({ contract, tokenContract, address }) {
       .call()
       .then((data) => {
         console.log(window.tronWeb.toDecimal(data))
-        if (window.tronWeb.toDecimal(data) >= 5000000) {
+        if (window.tronWeb.toDecimal(data) >= 500000) {
           setIsPoolPacked(true);
         }
       });
