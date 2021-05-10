@@ -67,7 +67,7 @@ export default function StakeForm({ contract, tokenContract, address }) {
       .call()
       .then((data) => {
         console.log(window.tronWeb.toDecimal(data))
-        if (window.tronWeb.toDecimal(data) >= 5000000000) {
+        if (window.tronWeb.toDecimal(data) >= 7000000000) {
           setIsPoolPacked(true);
         }
       });
