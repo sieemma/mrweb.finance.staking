@@ -14,11 +14,13 @@ export default function StakeForm({ contract, tokenContract, address }) {
   const [amount, setNewAmount] = React.useState("");
   const [apyModel, setApyModel] = React.useState("30");
   const [isPoolPacked, setIsPoolPacked] = React.useState(false);
+  const totalStaked = window.tronWeb.toDecimal(data[1]);
 
   const submitStake = () => {
     if (amount < 100) return toast.error("Minimum Stake Amount is 100 AMA");
     if(amount > 250000) return toast.error('Maximum Stake Amount is 250K AMA');
-
+    if(totalStaked + amount > 7000) return toast.error('Sorry but we want only 7000 AMA staked');
+    
     tokenContract
       .approve(
         window.tronWeb.address.fromHex(contract.address),
@@ -68,8 +70,6 @@ export default function StakeForm({ contract, tokenContract, address }) {
         console.log(window.tronWeb.toDecimal(data))
         if (window.tronWeb.toDecimal(data) >= 7000000000) {
           setIsPoolPacked(true);
-        else (window.tronWeb.toDecimal(data) + amount >= 7000000000)
-          return toast.error('Sorry but our total staked tokens cannot exceed 7000 AMA');
         }
       });
   }, [address, contract]);
