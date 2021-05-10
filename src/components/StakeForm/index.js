@@ -18,7 +18,6 @@ export default function StakeForm({ contract, tokenContract, address }) {
   const submitStake = () => {
     if (amount < 100) return toast.error("Minimum Stake Amount is 100 AMA");
     if(amount > 250000) return toast.error('Maximum Stake Amount is 250K AMA');
-    if(.currentPoolAmount + amount >= 7000) return toast.error('Sorry but our total staked tokens cannot exceed 5M AMA');
 
     tokenContract
       .approve(
@@ -69,6 +68,8 @@ export default function StakeForm({ contract, tokenContract, address }) {
         console.log(window.tronWeb.toDecimal(data))
         if (window.tronWeb.toDecimal(data) >= 7000000000) {
           setIsPoolPacked(true);
+        else (window.tronWeb.toDecimal(data) + amount >= 7000000000)
+          return toast.error('Sorry but our total staked tokens cannot exceed 7000 AMA');
         }
       });
   }, [address, contract]);
