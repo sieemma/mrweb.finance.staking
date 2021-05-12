@@ -14,7 +14,6 @@ export default function StakeForm({ contract, tokenContract, address }) {
   const [amount, setNewAmount] = React.useState("");
   const [apyModel, setApyModel] = React.useState("30");
   const [isPoolPacked, setIsPoolPacked] = React.useState(false);
-  const totalStaked = window.tronWeb.toDecimal(data[1]);
 
   const submitStake = () => {
     if (amount < 100) return toast.error("Minimum Stake Amount is 100 AMA");
